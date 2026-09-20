@@ -94,7 +94,16 @@ RSS를 받는다. 제목은 CDATA라서 `$_.title.InnerText` 로 읽는다. 응�
 4. 휴대폰 폭(375px)으로 줄여서 다시 확인하고, 끝나면 반드시 `desktop`으로 되돌린다.
 5. 어긋난 곳이 있으면 고치고 다시 확인한다.
 
-### 5. 알릴 것
+### 5. 홈페이지에 올리기
+
+4단계 확인이 끝난 뒤에 한다. 이 폴더에서 실행한다.
+
+1. `dashboard.html` 을 `index.html` 로 복사한다(덮어쓴다).
+2. `git add -A` → `git commit -m "갱신"` → `git push`. 바뀐 것이 없으면 그냥 넘어간다.
+3. `.gitignore` 가 `.env`·그림 파일을 막고 있으니 `git add -A` 로도 열쇠는 올라가지 않는다. 그래도 커밋 전 `git status` 에 `.env` 가 보이면 멈추고 알린다.
+4. push 가 실패하면(로그인 만료 등) 이유를 한 줄로 알리고, 화면 만들기는 끝난 것으로 보고한다.
+
+### 6. 알릴 것
 
 짧게 다음만 알린다.
 
@@ -102,4 +111,5 @@ RSS를 받는다. 제목은 CDATA라서 `$_.title.InnerText` 로 읽는다. 응�
 - 고른 뉴스 3건의 제목
 - 지오코딩이 안 돼서 좌표를 직접 넣었다면 그 사실
 - 낱말이 든 기사가 3건이 안 돼서 최근 기사로 채웠다면 그 사실
-- 만든 파일 이름: `weather.md`, `weather_alert.md`, `news.md`, `dashboard.html`
+- 만든 파일 이름: `weather.md`, `weather_alert.md`, `news.md`, `dashboard.html`, `index.html`
+- 홈페이지에 올렸는지(올렸으면 주소 https://lovecbs2876-lang.github.io/morningbox/ , 바뀐 게 없거나 실패했으면 그 사실). 홈페이지에 반영되기까지 1~2분 걸린다.
