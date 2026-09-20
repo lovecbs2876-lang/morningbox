@@ -4,3 +4,4 @@
 *.png
 *.webp
 token.txt
+.claude/scheduled_tasks.lock
