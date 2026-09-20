@@ -1,0 +1,6 @@
+.env
+*.jpg
+*.jpeg
+*.png
+*.webp
+token.txt

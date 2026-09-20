@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아침 화면</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#EBF2F8;color:#1F1F1F;font-family:'Pretendard','Noto Sans KR','Malgun Gothic',sans-serif;font-size:18px;line-height:1.5}
+main{max-width:720px;margin:0 auto;padding:24px 16px}
+section+section{margin-top:24px}
+.card{background:#FFFFFF;border:1px solid #EDF2F5;border-radius:16px;padding:24px}
+.card+.card{margin-top:16px}
+h1,h2{font-size:28px;font-weight:700;margin:0;line-height:1.3}
+h2 a{color:#1F1F1F;text-decoration:underline;overflow-wrap:anywhere}
+.date,.meta{font-size:16px;color:#5E676C;margin:4px 0 0}
+.row{font-size:18px;margin:0}
+.rows{margin-top:16px}
+.bars{display:flex;align-items:flex-end;gap:2px;height:232px;padding-top:32px;margin-top:16px;border-bottom:1px solid #5E676C}
+.col{flex:1;height:100%;display:flex;align-items:flex-end;min-width:0}
+.bar{position:relative;width:100%;background:#5E676C;border-radius:4px 4px 0 0}
+.bar.hi{background:#1F1F1F}
+.lab{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:4px;font-size:16px;color:#1F1F1F;white-space:nowrap}
+.axis{position:relative;height:28px;margin-top:4px}.axis+.axis{margin-top:0}
+.xl{position:absolute;font-size:16px;color:#5E676C;white-space:nowrap;transform:translateX(-50%)}
+.alert{font-size:18px;margin:16px 0 0;padding:12px 16px;border-radius:16px;color:#1F1F1F}
+.alert.over{background:#2D8AF4;color:#FFFFFF;font-size:28px;font-weight:700}
+.sum{font-size:18px;margin:8px 0 0}
+.src{font-size:16px;color:#5E676C;margin:16px 0 0}
+</style>
+</head>
+<body>
+<main>
+<section class="card">
+<h1>화성시 동탄신도시 청계동 시간별 기온</h1>
+<p class="date">2026-09-20 · 하루 24시간 (막대 높이는 0℃부터)</p>
+<div class="bars" role="img" aria-label="오늘 시간별 기온 막대 그래프, 최저 16.4℃ 최고 26.2℃"><div class="col" title="00시 19.5℃"><div class="bar" style="height:74.43%"></div></div><div class="col" title="01시 18.6℃"><div class="bar" style="height:70.99%"></div></div><div class="col" title="02시 18℃"><div class="bar" style="height:68.7%"></div></div><div class="col" title="03시 17.6℃"><div class="bar" style="height:67.18%"></div></div><div class="col" title="04시 17℃"><div class="bar" style="height:64.89%"></div></div><div class="col" title="05시 16.6℃"><div class="bar" style="height:63.36%"></div></div><div class="col" title="06시 16.4℃"><div class="bar hi" style="height:62.6%"></div></div><div class="col" title="07시 16.5℃"><div class="bar" style="height:62.98%"></div></div><div class="col" title="08시 18.1℃"><div class="bar" style="height:69.08%"></div></div><div class="col" title="09시 20℃"><div class="bar" style="height:76.34%"></div></div><div class="col" title="10시 21.9℃"><div class="bar" style="height:83.59%"></div></div><div class="col" title="11시 23.4℃"><div class="bar" style="height:89.31%"></div></div><div class="col" title="12시 24.7℃"><div class="bar" style="height:94.27%"></div></div><div class="col" title="13시 25.5℃"><div class="bar" style="height:97.33%"></div></div><div class="col" title="14시 26℃"><div class="bar" style="height:99.24%"></div></div><div class="col" title="15시 26.2℃"><div class="bar hi" style="height:100%"><span class="lab">최고 26.2℃</span></div></div><div class="col" title="16시 26.1℃"><div class="bar" style="height:99.62%"></div></div><div class="col" title="17시 25℃"><div class="bar" style="height:95.42%"></div></div><div class="col" title="18시 22.6℃"><div class="bar" style="height:86.26%"></div></div><div class="col" title="19시 20.8℃"><div class="bar" style="height:79.39%"></div></div><div class="col" title="20시 19.6℃"><div class="bar" style="height:74.81%"></div></div><div class="col" title="21시 19℃"><div class="bar" style="height:72.52%"></div></div><div class="col" title="22시 18.5℃"><div class="bar" style="height:70.61%"></div></div><div class="col" title="23시 17.8℃"><div class="bar" style="height:67.94%"></div></div></div>
+<div class="axis"><span class="xl" style="left:2.08%">0시</span><span class="xl" style="left:27.08%">6시</span><span class="xl" style="left:52.08%">12시</span><span class="xl" style="left:77.08%">18시</span><span class="xl" style="left:97.92%">23시</span></div>
+<div class="axis"><span class="xl" style="left:27.08%">▲ 최저 16.4℃</span></div>
+<div class="rows"><p class="row">최고 기온: 26.2℃ · 최저 기온: 16.4℃</p>
+<p class="row">비 올 확률: 0%</p></div>
+<p class="alert over">⚠ 기준 넘음</p>
+<p class="src">open-meteo.com (좌표 37.19, 127.11 기준)</p>
+</section>
+<section>
+<article class="card"><h2><a href="https://www.yna.co.kr/view/AKR20260920026200064" target="_blank" rel="noopener">충북교육청, 추석 연휴기간 학교 주차장 무료 개방</a></h2><p class="sum">충북도교육청은 추석 명절을 맞아 귀성객과 지역주민의 주차 편의를 위해 교육지원청과 학교 등 도내 교육기관 34...</p><p class="meta">09-20 12:51 · 연합뉴스</p></article>
+<article class="card"><h2><a href="https://www.yna.co.kr/view/AKR20260920024500064" target="_blank" rel="noopener">충북도, 추석&#183;가을철 산불 감시망 가동…&quot;무관용&#39; 기조 유지</a></h2><p class="sum">충북도는 산불 발생 우려가 큰 추석 연휴와 가을철을 맞아 강력한 단속 중심의 감시망을 가동한다고 20일 밝혔다...</p><p class="meta">09-20 12:03 · 연합뉴스</p></article>
+<article class="card"><h2><a href="https://www.yna.co.kr/view/AKR20260918187300530" target="_blank" rel="noopener">추석연휴 건강하게…질병청 &quot;해외감염병&#183;독감 예방수칙 지켜야&quot;</a></h2><p class="sum">질병관리청은 추석 연휴 고향 방문과 국내외 여행, 성묘 등의 활동이 늘어나는 만큼 주요 감염병 예방수칙을 지켜...</p><p class="meta">09-20 12:00 · 연합뉴스</p></article>
+</section>
+<p class="src">출처: 연합뉴스 RSS (2026-09-20 13:33 조회)</p>
+</main>
+</body>
+</html>
